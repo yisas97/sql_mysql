@@ -91,3 +91,38 @@ select database(); -> muestra cual es la base de datos que tenemos seleccionada 
 
 Todos los comandos deben de terminar con “;”
 ```
+
+
+## Clase 3:
+
+
+MyISAM:
+
+```
+1. Bloqueo de Tabla
+2. Aumento del rendimiento si nuestra aplicacion realiza un elevado numero de consultas "Select"
+3. Las tablas pueden llegar a dar problemas en la recuperacion de datos.
+4. Permite hacer busqedas full-text
+5. Menor consumo memoria RAM
+6. Mayor velocidad en general a la hora de recuperar de datos
+7. Ausencia de caracteristicas de atomicidad ya que no tiene que hacer comprobaciones de la integridad referencial, ni bloquear las tablas para realizar las operaciones, esto nos lleva como las anteriores puntos a una mayor velocidad.
+
+```
+
+InnoDB:
+
+```
+1. Bloqueo de registro
+2. Soporte de transacciones
+3. Rendimiento
+4. Concurrencia
+5. Confiabilidad
+6. Permite hacer busqueda full-text(mysql >= 5.6)
+
+```
+
+En la vida real usamos las tablas con dos propositos:
+```
+- Catalogo: Crecerá en un orden lento, segun las necesidades de la propia BD (Listado de Usuarios, InnoDB)
+- Operacion: Se enfocan a lectura, mayor acceso a disco duro. (Prestamos de Libros, MyISAM)
+```
