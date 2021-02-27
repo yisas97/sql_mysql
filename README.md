@@ -126,3 +126,7 @@ En la vida real usamos las tablas con dos propositos:
 - Catalogo: Crecerá en un orden lento, segun las necesidades de la propia BD (Listado de Usuarios, InnoDB)
 - Operacion: Se enfocan a lectura, mayor acceso a disco duro. (Prestamos de Libros, MyISAM)
 ```
+
+## Clase4:
+
+
